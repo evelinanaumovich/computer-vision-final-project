@@ -1,1 +1,1 @@
-# computer-vision-final-project
+# Final Project Proposal
