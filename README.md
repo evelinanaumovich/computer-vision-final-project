@@ -2,7 +2,7 @@
 Create a model to recognize the top used 2000 words in sign language. 
 
 # Proposed Approach
-Download a video dataset from a public source and train a model to recognize the words in the videos. 
+Download a video dataset from a public source and train a model to recognize the words in the videos. We are planning to use tools like Yolo because of its speed and accuracy and the python frameworks will be etiher or all of the following: PyTorch, OpenCV, and TensorFlow.
 
 # Input and Output Data
 Input: Using your local camera sign a word 
