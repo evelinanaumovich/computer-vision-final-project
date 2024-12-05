@@ -1,8 +1,10 @@
-# import YOLO model
-from ultralytics import YOLO
+import os 
+
+# import I3D model
+from tensorflow.keras.models import InceptionI3d
 
 # Load a model
-model = YOLO('yolov8n-cls.pt') 
+model = InceptionI3d('yolov8n-cls.pt') 
 
 # Train the model
 model.train(data='./Images', epochs=5)
