@@ -1,20 +1,39 @@
-# Final Project Proposal Idea
-Create a model to recognize the top used 2000 words in sign language. 
 
-# Proposed Approach
-Download a video dataset from a public source and train a model to recognize the words in the videos. We are planning to use tools like Yolo because of its speed and accuracy and the python frameworks will be etiher or all of the following: PyTorch, OpenCV, and TensorFlow.
+# 1. Project Overview
 
-# Input and Output Data
-Input: Using your local camera sign a word 
-Output: Text to Speech translation of whatever the person is signing
+## Table of Contents
+- [Problem Domain and Brief Problem Description](#problem-domain-and-brief-problem-description)
+- [High Level Approach](#high-level-approach)
+- [Results](#results)
 
-# Training Data/Where We Are Getting It From 
-Our data comes from the WLASL dataset. This is a publically avaliable dataset on Kaggle with images taken from youtube of people saying the 2000 most common words in ASL. Our dataset contains 12k Youtube videos, and using a python script to segment the videos into images to pass into a model. We plan to use Yolo.
+## Detailed Writeup
+- [Step 1: Data Preparation](#step-1-data-preparation)
+- [Step 2: Key Points using MP Holistic](#step-2-key-points-using-mp-holistic)
+    - [What is MP Holistic?](#what-is-mp-holistic)
+    - [Sources and References](#sources-and-references)
+- [Step 3: Building and Training a 3D CNN Neural Network](#building-and-training-a-3d-cnn-neural-network)
+    - [Sources and References](#sources-and-references)
+---
 
-Link to the dataset on kaggle is here: [https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed/data?select=nslt_2000.json](Dataset)
+## Problem Domain and Brief Problem Description
+1-2 paragraphs describing what your goal is (what are the inputs and outputs of the system you are considering), what are example data input and output, and who would care about this problem.
 
-# Evaluation Plan 
-We will be evaluation our project by the correctness of word identification of diffrent people signing. Out plan is to have a diverse dataset in order to train our model with little to no biases. We expected the majority of our time to be taken into training our model and testing to see the accuracy of the words that are being signed. 
+## High Level Approach
 
-# Impact
-We want this project to be an easy way to create communication between people that know and don't know sign language. Our purpose is to eliviate a language barrier and create a closer comminity. 
+What is the high-level approach that you are taking? What datasets are you using? What makes the approach difficult, or not so difficult? How much data are you using? Are there any problems with that data?
+
+## Results
+
+How do the results relate to alternative approaches to the same problem? Does this “solve” the problem for real use cases, or are there still things needed before your approach is useful?
+
+---
+
+# 2. In Depth Writeup
+
+## Step 1: Data Preparation
+
+## Step 2: Key Points using MP Holistic
+
+### What is MP Holistic?
+
+## Step 3: Building and Training a 3D CNN Neural Network
