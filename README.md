@@ -36,4 +36,22 @@ How do the results relate to alternative approaches to the same problem? Does th
 
 ### What is MP Holistic?
 
+The MediaPipe (MP) Holistic is a full-body landmark detection tool that combines components of the pose, face, and hand landmarkers in order to create a complete landmarker for the human body. It achieves this by running a machine learning model on a continuous stream of images. It is designed to run in real time, which is ideal for our purposes.
+
+It takes in an image of the human body, and outputs:
+- 33 pose landmarks
+- 468 face landmarks
+- 21 hand landmarks (per hand)
+
+
+<p align="center" style="display: flex">
+  <img src="imgs/example1.png" width="350" title="hover text">
+  <img src="imgs/example2.png" width="350" alt="accessibility text">
+</p>
+
+You can see in the above example image the landmarks across the face and hands the we are using to define the pose.
+
+
+We then parse that output and use it as the input for our neural network that is trained in the next step.
+
 ## Step 3: Building and Training a 3D CNN Neural Network
