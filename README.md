@@ -29,7 +29,7 @@ This was the output that was produced:
 
 image 1/1 /home/andre/Desktop/ASL-Darknet/test.jpg: **224x224 B 0.97, F 0.03, U 0.00, N 0.00, A 0.00, 1.2ms** 
 
-The model was able to predict that the image aovee is a letter B with a 97% accuracy, following with other options it is predicted it to be. 
+The model was able to predict that the image above is a letter B with a 97% accuracy, following with other options it is predicted it to be. 
 Our next step is to connect the trained model to a live camera feed.
 Some of the challenges we ran into while trying to connect the live camera feed to the model is printing an accurate result from our hand gestures. When using a data set to train our model and then using the live camera we got less accuracy on our predictions but the model was still able to predict some of the letters. We belive the prediction scores went down because the training data was a diffrent setting, lighting, and hand compared to the pictures that we were using to train it in the first place. 
 
