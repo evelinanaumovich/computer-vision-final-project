@@ -16,6 +16,9 @@
 ---
 
 ## Problem Domain and Brief Problem Description
+![image](https://github.com/user-attachments/assets/0571fad3-6705-4fb4-bf6b-0ea445a48e4b)
+![image](https://github.com/user-attachments/assets/cebf04d9-686e-4ad9-a4bb-609b40391bac)
+
 Our original idea for this final project was to create a computer vision program that would be able to detect the top 2000 words in American Sign Language (ASL). Using a dataset of 12,000 YouTube videos to train our model to accurately interpret ASL signs. The input is a live feed from a simple computer camera, looking for real-time ASL signs, which will then be processed to show a correcsponding text translation. This program could benefit the deaf and hard-of-hearing community by providing real-time translation and improving communication between those that do and no not know sign language. 
 
 After many failures and lots of hard work we ran into a few diffuculties with our initial proposed project, that due to the time constraints we decided to pivot to something a little more managable. Therefore, we decided to use the same approach as before but instead of ASL words we want to detect ASL alphabet. This decision was made due to the fact that when implementing our program we ran into a few problems. The model that we are using for our project is TensorFlow. When trying to train our model we were often given errors saying that the version of our package did not match the package that we needed, and after fixing the package a new package error would come up, and so on in a constant cycle. Tensorflow seems to be very particular with what kind of versions of packages we are using. We also ran into an issue of "too much" data. Trying to run 12000 youtube video is very challenging, as dowloading and training for the large amount of data takes a long time.
