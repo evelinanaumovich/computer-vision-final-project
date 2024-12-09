@@ -29,6 +29,15 @@ What is the high-level approach that you are taking? What datasets are you using
 
 We are using collected data of ASL hand gestures and training the computer vision model called YOLO to detect hand gestures. We were having a lot of difficulty with the Tensorflow model and the huge amount of data set so instead we decided to pivot last minute to something that is much more managable. We are taking a smaller data set of the english alphabet letters (26 letter) instead of top used words in ASL (2000 words) and instead of using Tensorflow we decided to use something a little bit more familiar to us, YOLO. 
 
+After successfully training our YOLO model on the test data we put in some simple one image detection. 
+When our model was given this image below (letter B in sign language): 
+![image](https://github.com/user-attachments/assets/accc0fcc-9e7f-460c-a8a1-c57c2de456e5)
+
+This was the output that was produced: 
+image 1/1 /home/andre/Desktop/ASL-Darknet/test.jpg: 224x224 B 0.97, F 0.03, U 0.00, N 0.00, A 0.00, 1.2ms 
+
+The model was able to predict that the image aovee is a letter B with a 97% accuracy, following with other options it is predicted it to be. 
+
 ## Results
 
 How do the results relate to alternative approaches to the same problem? Does this “solve” the problem for real use cases, or are there still things needed before your approach is useful?
