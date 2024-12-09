@@ -46,15 +46,3 @@ How do the results relate to alternative approaches to the same problem? Does th
 
 Due to having a lot of issues with our 12k video model training, we were not able to complete the set where the model is trained and we are able to see results. Instead of using 12k of videos we could've used a much smaller set of data, or used a different model, perhaps something like YOLO. When we undertood that there would be a problem with too much data, we created our on small set of 6 diffrent words that had about 90 picture inputs all with labels, but we were not able to train our model on those images as we kept running into package issues. We belive that our approach would have been succesful if we were able to figure out the issues with the Tensorflow model sooner, maybe even pick a diffrent model.  
 
----
-
-# 2. In Depth Writeup
-
-## Step 1: Data Preparation
-
-
-## Step 2: Key Points using MP Holistic
-
-### What is MP Holistic?
-
-## Step 3: Building and Training a 3D CNN Neural Network
