@@ -14,7 +14,11 @@ Our data comes from the WLASL dataset. This is a publically avaliable dataset on
 Link to the dataset on kaggle is here: [https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed/data?select=nslt_2000.json](Dataset)
 
 # Evaluation Plan 
-We will be evaluation our project by the correctness of word identification of diffrent people signing. Out plan is to have a diverse dataset in order to train our model with little to no biases. We expected the majority of our time to be taken into training our model and testing to see the accuracy of the words that are being signed. 
+When implementing our program we ran into a few problems. The model that we are using for our project is TensorFlow. When trying to train our model we were often given errors saying that the version of our package did not match the package that we needed, and after fixing the package a new package error would come up, and so on in a constant cycle. Tensorflow seems to be very particular with what kind of versions of packages we are using. We also ran into an issue of "too much" data. Trying to run 12000 youtube video is very challenging, as dowloading and training for the large amount of data takes a long time. So in order to speed up the process we decided to use a partial amount of the videos. 
+
+The diffuculties with Tensorflow is not allowing us to train our model on even a very small set of data, so if we are able to get the process of traning working on 6 words, later on in the project we would be able to add more to the data and train it on a bigger set like 12k videos. 
+
+We wanted to create a model that would be able to detect 2000 words in sign language but after some time we have realized that our goal mught have been too ambitious due to time constraints. 
 
 # Impact
 We want this project to be an easy way to create communication between people that know and don't know sign language. Our purpose is to eliviate a language barrier and create a closer comminity. 
