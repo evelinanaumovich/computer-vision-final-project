@@ -16,7 +16,7 @@
 ---
 
 ## Problem Domain and Brief Problem Description
-1-2 paragraphs describing what your goal is (what are the inputs and outputs of the system you are considering), what are example data input and output, and who would care about this problem.
+Our original idea for this final project was to create a computer vision program that would be able to detect the top 2000 words in American Sign Language (ASL). Using a dataset of 12,000 YouTube videos to train our model to accurately interpret ASL signs. The input is a live feed from a simple computer camera, looking for real-time ASL signs, which will then be processed to show a correcsponding text translation. This program could benefit the deaf and hard-of-hearing community by providing real-time translation and improving communication between those that do and no not know sign language.
 
 ## High Level Approach
 
