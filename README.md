@@ -50,7 +50,7 @@ Here are a couple of images from our results:
 
 ![image](https://github.com/user-attachments/assets/54ec8335-318d-499a-b774-bebf0761b7d6) ![image](https://github.com/user-attachments/assets/c4f19a1e-2fcc-4e16-a7f7-0e5543970fcf)
 
-The webcam is capturing Andre's hand motion and predicting the letters he is gesturing. You can see a green letter that the model is predicting at the top left corner of the webcam. Behind the webcam is a terminal output. All the way at the bottom it is displaying the top 1 and topr 5 letter the program is predicting the hand gesture to be as well as showing the probability of the prediction all the way at the bottom. The prediction numbers are way lower because of the fact that that the model was trained on a diffrent type of data set then what we are using for the live webcam as well as the fact that the model was trained on still pictures and not a constantly moving hand. 
+The webcam is capturing Andre's hand motion and predicting the letters he is gesturing. You can see a green letter that the model is predicting at the top left corner of the webcam. Behind the webcam is a terminal output. All the way at the bottom it is displaying the top 1 and topr 5 letter the program is predicting the hand gesture to be as well as showing the probability of the prediction all the way at the bottom. The prediction numbers are way lower because of the fact that that the model was trained on a diffrent type of data set then what we are using for the live webcam as well as the fact that the model was trained on still pictures and not a constantly moving hand. Our overall accuracy is about 40% and our training data accuracy was around 90%. 
 
 **top1: 10**
 
