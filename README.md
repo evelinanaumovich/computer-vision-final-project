@@ -6,15 +6,6 @@
 - [High Level Approach](#high-level-approach)
 - [Results](#results)
 
-## Detailed Writeup
-- [Step 1: Data Preparation](#step-1-data-preparation)
-- [Step 2: Key Points using MP Holistic](#step-2-key-points-using-mp-holistic)
-    - [What is MP Holistic?](#what-is-mp-holistic)
-    - [Sources and References](#sources-and-references)
-- [Step 3: Building and Training a 3D CNN Neural Network](#building-and-training-a-3d-cnn-neural-network)
-    - [Sources and References](#sources-and-references)
----
-
 ## Problem Domain and Brief Problem Description
 ![image](https://github.com/user-attachments/assets/0571fad3-6705-4fb4-bf6b-0ea445a48e4b)
 
@@ -42,6 +33,11 @@ The model was able to predict that the image aovee is a letter B with a 97% accu
 Our next step is to connect the trained model to a live camera feed.
 Some of the challenges we ran into while trying to connect the live camera feed to the model is printing an accurate result from our hand gestures. When using a data set to train our model and then using the live camera we got less accuracy on our predictions but the model was still able to predict some of the letters. We belive the prediction scores went down because the training data was a diffrent setting, lighting, and hand compared to the pictures that we were using to train it in the first place. 
 
+Here is a sample of what our training data looked like:
+
+![image](https://github.com/user-attachments/assets/3fc72b0a-47ba-46a7-8b1d-597eaa3450cc)
+
+
 ## Results
 
 How do the results relate to alternative approaches to the same problem? Does this “solve” the problem for real use cases, or are there still things needed before your approach is useful?
@@ -51,4 +47,12 @@ Due to having a lot of issues with our 12k video model training, we were not abl
 In our new modified project for ASL alphabet detection we got some results. While the model is not super accurate we are able to get a good amount of accurate letter predictions. The challange comes with the live camera because it is hard to keep a hand still in real life the letter are constantly changing to try and predict the hand gesture. So in later developments there would need to be a better/more confident prediction in the model. In the future this could be used as a practice tool for learning ASL alphabet and learning how to spell out words in ASl. 
 
 Here are a couple of images from our results: 
+
+![image](https://github.com/user-attachments/assets/54ec8335-318d-499a-b774-bebf0761b7d6) ![image](https://github.com/user-attachments/assets/c4f19a1e-2fcc-4e16-a7f7-0e5543970fcf)
+
+the Web cap is capturing Andres hand motion and predicting the letters he is gesturing. You can see a green letter that the model is predicting at the top left corner of the webcam. Behind the webcam is a terminal output. All the way at the bottom it is displaying the top 1 and topr 5 letter the program is predicting the hand gesture to be as well as showing the probability of the prediction all the way at the bottom. The prediction numbers are way lower because of the fact that that the model was trained on a diffrent type of data set then what we are using for the live webcam as well as the fact that the model was trained on still pictures and not a constantly moving hand. 
+**top1: 10 
+topiconf: tensor (0.3755, device='cuda:0') 
+top5: [10, 22, 5, 8, 21] 
+top5conf: tensor ([0.3755, 0.2336, 0.1208, 0.1018, 0.0739], device='cuda:0')**
 
