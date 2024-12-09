@@ -31,10 +31,12 @@ We are using collected data of ASL hand gestures and training the computer visio
 
 After successfully training our YOLO model on the test data we put in some simple one image detection. 
 When our model was given this image below (letter B in sign language): 
+
 ![image](https://github.com/user-attachments/assets/accc0fcc-9e7f-460c-a8a1-c57c2de456e5)
 
 This was the output that was produced: 
-image 1/1 /home/andre/Desktop/ASL-Darknet/test.jpg: 224x224 B 0.97, F 0.03, U 0.00, N 0.00, A 0.00, 1.2ms 
+
+image 1/1 /home/andre/Desktop/ASL-Darknet/test.jpg: **224x224 B 0.97, F 0.03, U 0.00, N 0.00, A 0.00, 1.2ms** 
 
 The model was able to predict that the image aovee is a letter B with a 97% accuracy, following with other options it is predicted it to be. 
 
