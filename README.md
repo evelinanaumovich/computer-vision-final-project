@@ -16,21 +16,28 @@
 ---
 
 ## Problem Domain and Brief Problem Description
-Our original idea for this final project was to create a computer vision program that would be able to detect the top 2000 words in American Sign Language (ASL). Using a dataset of 12,000 YouTube videos to train our model to accurately interpret ASL signs. The input is a live feed from a simple computer camera, looking for real-time ASL signs, which will then be processed to show a correcsponding text translation. This program could benefit the deaf and hard-of-hearing community by providing real-time translation and improving communication between those that do and no not know sign language.
+Our original idea for this final project was to create a computer vision program that would be able to detect the top 2000 words in American Sign Language (ASL). Using a dataset of 12,000 YouTube videos to train our model to accurately interpret ASL signs. The input is a live feed from a simple computer camera, looking for real-time ASL signs, which will then be processed to show a correcsponding text translation. This program could benefit the deaf and hard-of-hearing community by providing real-time translation and improving communication between those that do and no not know sign language. 
+
+After many failures and lots of hard work we ran into a few diffuculties with our initial proposed project, that due to the time constraints we decided to pivot to something a little more managable. Therefore, we decided to use the same approach as before but instead of ASL words we want to detect ASL alphabet. This decision was made due to the fact that when implementing our program we ran into a few problems. The model that we are using for our project is TensorFlow. When trying to train our model we were often given errors saying that the version of our package did not match the package that we needed, and after fixing the package a new package error would come up, and so on in a constant cycle. Tensorflow seems to be very particular with what kind of versions of packages we are using. We also ran into an issue of "too much" data. Trying to run 12000 youtube video is very challenging, as dowloading and training for the large amount of data takes a long time.
 
 ## High Level Approach
 
 What is the high-level approach that you are taking? What datasets are you using? What makes the approach difficult, or not so difficult? How much data are you using? Are there any problems with that data?
 
+We are using collected data of ASL hand gestures and training the computer vision model called YOLO to detect hand gestures. We were having a lot of difficulty with the Tensorflow model and the huge amount of data set so instead we decided to pivot last minute to something that is much more managable. We are taking a smaller data set of the english alphabet letters (26 letter) instead of top used words in ASL (2000 words) and instead of using Tensorflow we decided to use something a little bit more familiar to us, YOLO. 
+
 ## Results
 
 How do the results relate to alternative approaches to the same problem? Does this “solve” the problem for real use cases, or are there still things needed before your approach is useful?
+
+Due to having a lot of issues with our 12k video model training, we were not able to complete the set where the model is trained and we are able to see results. Instead of using 12k of videos we could've used a much smaller set of data, or used a different model, perhaps something like YOLO. When we undertood that there would be a problem with too much data, we created our on small set of 6 diffrent words that had about 90 picture inputs all with labels, but we were not able to train our model on those images as we kept running into package issues. We belive that our approach would have been succesful if we were able to figure out the issues with the Tensorflow model sooner, maybe even pick a diffrent model.  
 
 ---
 
 # 2. In Depth Writeup
 
 ## Step 1: Data Preparation
+
 
 ## Step 2: Key Points using MP Holistic
 
