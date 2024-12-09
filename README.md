@@ -17,7 +17,6 @@
 
 ## Problem Domain and Brief Problem Description
 ![image](https://github.com/user-attachments/assets/0571fad3-6705-4fb4-bf6b-0ea445a48e4b)
-![image](https://github.com/user-attachments/assets/cebf04d9-686e-4ad9-a4bb-609b40391bac)
 
 Our original idea for this final project was to create a computer vision program that would be able to detect the top 2000 words in American Sign Language (ASL). Using a dataset of 12,000 YouTube videos to train our model to accurately interpret ASL signs. The input is a live feed from a simple computer camera, looking for real-time ASL signs, which will then be processed to show a correcsponding text translation. This program could benefit the deaf and hard-of-hearing community by providing real-time translation and improving communication between those that do and no not know sign language. 
 
@@ -26,6 +25,7 @@ After many failures and lots of hard work we ran into a few diffuculties with ou
 ## High Level Approach
 
 What is the high-level approach that you are taking? What datasets are you using? What makes the approach difficult, or not so difficult? How much data are you using? Are there any problems with that data?
+![image](https://github.com/user-attachments/assets/cebf04d9-686e-4ad9-a4bb-609b40391bac)
 
 We are using collected data of ASL hand gestures and training the computer vision model called YOLO to detect hand gestures. We were having a lot of difficulty with the Tensorflow model and the huge amount of data set so instead we decided to pivot last minute to something that is much more managable. We are taking a smaller data set of the english alphabet letters (26 letter) instead of top used words in ASL (2000 words) and instead of using Tensorflow we decided to use something a little bit more familiar to us, YOLO. 
 
