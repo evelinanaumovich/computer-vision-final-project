@@ -39,10 +39,16 @@ This was the output that was produced:
 image 1/1 /home/andre/Desktop/ASL-Darknet/test.jpg: **224x224 B 0.97, F 0.03, U 0.00, N 0.00, A 0.00, 1.2ms** 
 
 The model was able to predict that the image aovee is a letter B with a 97% accuracy, following with other options it is predicted it to be. 
+Our next step is to connect the trained model to a live camera feed.
+Some of the challenges we ran into while trying to connect the live camera feed to the model is printing an accurate result from our hand gestures. When using a data set to train our model and then using the live camera we got less accuracy on our predictions but the model was still able to predict some of the letters. We belive the prediction scores went down because the training data was a diffrent setting, lighting, and hand compared to the pictures that we were using to train it in the first place. 
 
 ## Results
 
 How do the results relate to alternative approaches to the same problem? Does this “solve” the problem for real use cases, or are there still things needed before your approach is useful?
 
 Due to having a lot of issues with our 12k video model training, we were not able to complete the set where the model is trained and we are able to see results. Instead of using 12k of videos we could've used a much smaller set of data, or used a different model, perhaps something like YOLO. When we undertood that there would be a problem with too much data, we created our on small set of 6 diffrent words that had about 90 picture inputs all with labels, but we were not able to train our model on those images as we kept running into package issues. We belive that our approach would have been succesful if we were able to figure out the issues with the Tensorflow model sooner, maybe even pick a diffrent model.  
+
+In our new modified project for ASL alphabet detection we got some results. While the model is not super accurate we are able to get a good amount of accurate letter predictions. The challange comes with the live camera because it is hard to keep a hand still in real life the letter are constantly changing to try and predict the hand gesture. So in later developments there would need to be a better/more confident prediction in the model. In the future this could be used as a practice tool for learning ASL alphabet and learning how to spell out words in ASl. 
+
+Here are a couple of images from our results: 
 
